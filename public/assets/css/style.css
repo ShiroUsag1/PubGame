@@ -9,8 +9,8 @@ src:url(../fonts/Raleway-VariableFont_wght.ttf)}
 @font-face{font-family: 'BalooDa2';
     src:url(../fonts/Font/BalooDa2-Regular.ttf)}
 
-@font-face{font-family:'Black Ops One';
-    src:url(../fonts/BlackOpsOne-Regular.ttf)}
+@font-face{font-family:'Crate';
+    src:url(../fonts/CARGC___.TTF)}
 
 @keyframes counting {
     100% {
@@ -23,7 +23,14 @@ padding:0;
 margin:0}
 
 
-ul{list-style:none}
+ul{list-style:none;
+}
+
+
+
+ul li p{
+    font-size: 100%!important;
+}
 
 
 a{text-decoration:none}
@@ -36,6 +43,8 @@ i{-webkit-user-select:none;
 -o-user-select:none;
 user-select:none}
 
+p{font-family: 'BalooDa2';
+}
 
 
 html,body{scroll-behavior:unset!important}
@@ -53,31 +62,87 @@ color:#fff}
 }
 
 #chars{
-    background: url(../images/characters/charactersbg.jpg);
-    background-size: cover;
-}
-
-#print{
     background: url(../images/printbg.jpg);
     background-size: cover;
 }
 
-#token{
-    background: url(../images/beer.png);
-    background-size: cover;
+#about{
+    background-color: rgb(167, 34, 1);
 }
 
-#caneca{
+#caneca01{
     max-width: 100%;
-    width: 80%;
+    width: 60%;
     height: auto;
+    margin: 0 0 0 20%;
+    padding: 0;
+}
+
+.titles{
+    max-width: 100%;
     margin: 0 ;
     padding: 0;
 }
 
+#team{
+    background-image: url(../images/madera.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#homeinit{
+    background-image: linear-gradient(rgb(254, 194, 39), rgb(192, 146, 31));
+    border-radius: 30px;
+    box-shadow:0 5px 5px rgb(170, 168, 168);
+    padding: 0 1% 0.6% 1%;
+    margin: 0.5%;
+    position: absolute;
+    left: 10px;
+}
+
+.buttao{
+    background-image: linear-gradient(rgb(208, 55, 17), rgb(155, 44, 17));
+    border-radius: 30px;
+    box-shadow:0 5px 5px rgb(170, 168, 168);
+    padding: 0 1% 0.6% 1%;
+    margin: 0.5%;
+}
+
+#rewards{
+    background-image: url(../images/rewards/Site_Rewards_BGFull.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.pontinhos{
+    max-width: 50%;
+    width: 5%;
+}
+
+
+#token{
+    background: url(../images/tokenomics/tokenomicsbg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#caneca{
+    width: 500px;
+    height: auto;
+    margin: 0 0 0 10% ;
+    padding: 0;
+    z-index: 5;
+}
+
+#barman{
+    max-width: 100%;
+	padding: 0;
+    margin: 0;
+}
+
 #imgbutton{
     background-image: url(../images/PlayButton.png);
-    width: 40%;
+    width: 10%;
     height: 10%;
     max-width: 500px;
     background-repeat: no-repeat;
@@ -86,64 +151,73 @@ color:#fff}
     position: absolute;
 	border: none;
 	padding: 0;
-    margin: 10% 20% 0 20%;
+    right: 20%;
+    margin: 10% 0 0 0;
 	cursor: pointer;
     z-index: 1;
 }
 
-.imgcoin{
-    max-width: 20%;
+.animate__jello:hover{
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.animate__wobble:hover{
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#imgnuvem{
+    max-width: 35%;
+    position: absolute;
+    left: 0;
+	padding: 0;
+    margin-top: 30%;
+    z-index: 1;
+}
+
+#imgnuvem2{
+    max-width: 30%;
     position: absolute;
     right: 0;
 	padding: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
-#carouselarrow-N{
-    background-image: url(../images/characters/arrowN.png);
-    display: inline-block;
-    width: 70%;
-    height: 12%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
+.team{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000!important;
+    font-family: 'BalooDa2';
 }
 
-#carouselarrow-P{
-    background-image: url(../images/characters/arrowP.png);
-    display: inline-block;
-    width: 70%;
-    height: 12%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
+.img-team{
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    margin: 0 ;
+    padding: 0;
 }
+
 
 .UpBoard{
-    background: url(../images/UpBoard.png);
     display:inline-flex;
     position: relative;
     width: 100%;
-    height: 5%;
-    background-repeat: no-repeat;
-    background-position: start ;
-    background-size: 100% 80%;
-    border-radius: 10px;
+    height: 100%;
     margin: 0;
     }
 
 .mincont{
-    background-image: url(../images/UpBoardShadow.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 80% 100%;
-    border-radius: 20px;
     position: relative;
     display: inline;
-    width: 30%;
-    height: auto;
-    margin: 0 0 1% 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .mincont h1{
@@ -192,25 +266,98 @@ color:#fff}
     margin-top: 30%;
     margin-bottom: 7%;
     font-size: 160%;
-    font-family:'Black Ops One';
+    font-family:'Crate';
+}
+
+
+.carousel-caption {
+    display: none;
+  }
+  
+  .carousel-inner > .item > img {
+    width: 100%;
+  }
+  
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .well {
+    margin: 10px 0 0;
+  }
+  .well > h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+
+#demo{ position: relative;
+    max-width: 60%;
+    margin: 0;
+    padding: 0;
+    border-style: double;
+    border-width: 10px ;
 }
 
 .bd-ex{
-    position: relative;
-    width: 40%;
-    height: 31%;
-    margin: 0 0 0 8%;
+    width: 50%;
+    height: auto;
+    margin: 0 ;
     padding: 0;
+    text-align: center;
 }
 
+.bd-ex{
+    width: 50%;
+    height: auto;
+    margin: 0 ;
+    padding: 0;
+    text-align: center;
+}
+
+.bd-ex2{
+    width: 100%;
+    height: auto;
+    margin: 5% 0 5% 0 !important;
+    text-align: center;
+}
+
+.bd-ex2 img{
+    width: 50%;
+}
+
+
 .bd-ex h1{
-    margin: 10% 0 2% 0;
-    font-size: 160%;
-    font-family:'Black Ops One'
+    font-size: 500%;
+    font-family:'Crate'
 }
 
 .bd-ex p{
-    font-size: 20px;
+    text-align: left;
+    font-size: 150%;
+    font-weight: 600;
+    font-family: 'BalooDa2';
+}
+
+.bd-ex03{
+    width: 100%;
+    height: auto;
+    margin: 0 ;
+    padding: 0;
+    text-align: start;
+}
+
+.bd-ex03 h1{
+    margin: 20% 10% 0 10%;
+    font-size: 500%;
+    font-family:'Crate'
+}
+
+.bd-ex03 p{
+    margin: 0 10% 20% 10%;
+    font-size: 130%;
+    font-weight: 600;
     font-family: 'BalooDa2';
 }
 
@@ -228,15 +375,12 @@ color:#fff}
 
 .shadow{
     background-image: url(../images/UpBoardShadow.png);
+    background-position: center;
+    background-size: cover ;
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 200% 200%;
-    border-radius: 20px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin:0 0 10% 0;
-    padding-bottom:5%;
+    width: 45%;
+    box-shadow: none!important;
+    margin:0 0 0 8%;
 }
 
 #pubgame{
@@ -251,8 +395,9 @@ color:#fff}
 }
 
 .navbar a{
+    font-weight: 1000 ;
     font-size: 20px;
-    color:rgb(0, 0, 0)!important;
+    color:rgb(255, 255, 255)!important;
     font-family: 'BalooDa2';
 }
 
@@ -289,9 +434,9 @@ margin-left:3px;
 transform:translate(3px,3px)}
 
 
-.home-field .image img{max-width:80%;
-    margin-bottom: 20%;
+.home-field .image img{max-width:70%;
     margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 
@@ -308,6 +453,84 @@ justify-content:center;
 clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
 font-size:25px;
 color:#fff}
+
+
+#prints{
+    background-image: url(../images/fundoMeetBar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerC {
+    position: relative;
+    width: 320px;
+    margin: 10px auto 0 auto;
+    perspective: 2000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url(../images/print/publogo.png);
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url(../images/print/card.png);
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url(../images/print/historico.png);
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url(../images/print/previewmesa.png);
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url(../images/print/Site_Rewards_BGStars.png);
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url(../images/print/screenGame01.png);
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url(../images/print/screenGame02.png);
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url(../images/print/pubbar.png);
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url(../images/print/beer_pong_hud-03.png);
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
 
 
 .features-field .feat-box .text{flex-basis:calc(100% - 95px)}

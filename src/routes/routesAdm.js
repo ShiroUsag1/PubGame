@@ -31,7 +31,7 @@ function CustomRoute({ isPrivate, ...rest }) {
 export default function RoutesAdm() {
     return (
         <Switch>
-            <Route path="/home" component={Homepage} />
+            <Route path="/" component={Homepage} />
             <CustomRoute exact path="/game/auth/players/sign-in" component={Login} />
             <CustomRoute exact path="/game/auth/players/sign-up" component={SingUp} />
             <CustomRoute exact path="/game/auth/players/recover-password" component={RecoverPassword} />
